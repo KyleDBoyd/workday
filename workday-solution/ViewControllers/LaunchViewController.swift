@@ -10,16 +10,33 @@ import UIKit
 
 class LaunchViewController: UIViewController {
 
+    @IBOutlet weak var launchLogo: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.launchLogo.isHidden = true
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    private func animateLaunchLogo() {
+        self.launchLogo.alpha = 0.0
+        self.launchLogo.isHidden = false
+        
+        UIView.animate(withDuration: 1.5, delay: 0.0, options: UIViewAnimationOptions.curveEaseIn
+            , animations: {
+                self.launchLogo.alpha = 1.0
+        })
+    }
 }
 

@@ -30,6 +30,8 @@
 		A6FB55162077C73A00195029 /* UIStoryboard+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FB55152077C73A00195029 /* UIStoryboard+Extensions.swift */; };
 		A6FB55172077C73A00195029 /* UIStoryboard+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FB55152077C73A00195029 /* UIStoryboard+Extensions.swift */; };
 		A6FB55182077C73A00195029 /* UIStoryboard+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FB55152077C73A00195029 /* UIStoryboard+Extensions.swift */; };
+		A6FB551F2077CE7C00195029 /* MediaCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FB55052077C6E100195029 /* MediaCollectionViewController.swift */; };
+		A6FB55202077CE8300195029 /* MediaCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FB55052077C6E100195029 /* MediaCollectionViewController.swift */; };
 		B4BCD5F03A5A6C670E617790 /* Pods_workday_solutionTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5FDE6D50A88B82A077B3D81 /* Pods_workday_solutionTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -623,6 +625,7 @@
 			files = (
 				A6FB55172077C73A00195029 /* UIStoryboard+Extensions.swift in Sources */,
 				A6FB55032077C6B700195029 /* APIService.swift in Sources */,
+				A6FB551F2077CE7C00195029 /* MediaCollectionViewController.swift in Sources */,
 				A6FB54E92077C03500195029 /* workday_solutionTests.swift in Sources */,
 				A6FB550C2077C6F900195029 /* MediaCollectionViewCell.swift in Sources */,
 			);
@@ -634,6 +637,7 @@
 			files = (
 				A6FB55182077C73A00195029 /* UIStoryboard+Extensions.swift in Sources */,
 				A6FB55042077C6B700195029 /* APIService.swift in Sources */,
+				A6FB55202077CE8300195029 /* MediaCollectionViewController.swift in Sources */,
 				A6FB54F42077C03500195029 /* workday_solutionUITests.swift in Sources */,
 				A6FB550D2077C6F900195029 /* MediaCollectionViewCell.swift in Sources */,
 			);

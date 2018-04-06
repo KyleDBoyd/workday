@@ -14,5 +14,14 @@ extension UIStoryboard {
         return UIStoryboard(name: "Main", bundle: Bundle.main)
     }
     
+}
+
+extension UIStoryboard {
+    class func mediaCollectionViewController() -> MediaCollectionViewController {
+        return mainStoryboard().instantiateViewController(withIdentifier: String(describing:MediaCollectionViewController.self)) as! MediaCollectionViewController
+    }
     
+    class func mediaPlayerViewController() -> MediaPlayerViewController {
+        return mainStoryboard().instantiateViewController(withIdentifier: String(describing:MediaPlayerViewController.self)) as! MediaPlayerViewController
+    }
 }
