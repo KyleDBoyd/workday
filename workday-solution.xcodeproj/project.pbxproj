@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		39223BF4A48D6E3E11910455 /* Pods_workday_solution.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9BB3A32362EAEB0394CE43A /* Pods_workday_solution.framework */; };
+		71795C40D7394F0F62C1BD4F /* Pods_workday_solutionUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C73E0CE06BB89C22EAD6E9D6 /* Pods_workday_solutionUITests.framework */; };
 		A6FB54D42077C03500195029 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FB54D32077C03500195029 /* AppDelegate.swift */; };
 		A6FB54D62077C03500195029 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FB54D52077C03500195029 /* ViewController.swift */; };
 		A6FB54D92077C03500195029 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6FB54D72077C03500195029 /* Main.storyboard */; };
@@ -14,6 +16,7 @@
 		A6FB54DE2077C03500195029 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6FB54DC2077C03500195029 /* LaunchScreen.storyboard */; };
 		A6FB54E92077C03500195029 /* workday_solutionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FB54E82077C03500195029 /* workday_solutionTests.swift */; };
 		A6FB54F42077C03500195029 /* workday_solutionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FB54F32077C03500195029 /* workday_solutionUITests.swift */; };
+		B4BCD5F03A5A6C670E617790 /* Pods_workday_solutionTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5FDE6D50A88B82A077B3D81 /* Pods_workday_solutionTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		423A5340314B5C5DE4985249 /* Pods-workday-solutionTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-workday-solutionTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-workday-solutionTests/Pods-workday-solutionTests.debug.xcconfig"; sourceTree = "<group>"; };
+		431E545A1D4E5278E36D7B4A /* Pods-workday-solutionUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-workday-solutionUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-workday-solutionUITests/Pods-workday-solutionUITests.release.xcconfig"; sourceTree = "<group>"; };
+		77360D6FE8F1044E1E9814BF /* Pods-workday-solution.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-workday-solution.debug.xcconfig"; path = "Pods/Target Support Files/Pods-workday-solution/Pods-workday-solution.debug.xcconfig"; sourceTree = "<group>"; };
+		915E2837726246D08099AB85 /* Pods-workday-solution.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-workday-solution.release.xcconfig"; path = "Pods/Target Support Files/Pods-workday-solution/Pods-workday-solution.release.xcconfig"; sourceTree = "<group>"; };
+		A2CD190A7110C4153DDC5D6B /* Pods-workday-solutionUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-workday-solutionUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-workday-solutionUITests/Pods-workday-solutionUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A5FDE6D50A88B82A077B3D81 /* Pods_workday_solutionTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_workday_solutionTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6FB54D02077C03500195029 /* workday-solution.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "workday-solution.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6FB54D32077C03500195029 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6FB54D52077C03500195029 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +56,9 @@
 		A6FB54EF2077C03500195029 /* workday-solutionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "workday-solutionUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6FB54F32077C03500195029 /* workday_solutionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = workday_solutionUITests.swift; sourceTree = "<group>"; };
 		A6FB54F52077C03500195029 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B649E0DB47C29901581FAB63 /* Pods-workday-solutionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-workday-solutionTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-workday-solutionTests/Pods-workday-solutionTests.release.xcconfig"; sourceTree = "<group>"; };
+		C73E0CE06BB89C22EAD6E9D6 /* Pods_workday_solutionUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_workday_solutionUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9BB3A32362EAEB0394CE43A /* Pods_workday_solution.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_workday_solution.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39223BF4A48D6E3E11910455 /* Pods_workday_solution.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4BCD5F03A5A6C670E617790 /* Pods_workday_solutionTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +82,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				71795C40D7394F0F62C1BD4F /* Pods_workday_solutionUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		438937D625DB67B54B190300 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F9BB3A32362EAEB0394CE43A /* Pods_workday_solution.framework */,
+				A5FDE6D50A88B82A077B3D81 /* Pods_workday_solutionTests.framework */,
+				C73E0CE06BB89C22EAD6E9D6 /* Pods_workday_solutionUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		A6FB54C72077C03500195029 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +106,8 @@
 				A6FB54E72077C03500195029 /* workday-solutionTests */,
 				A6FB54F22077C03500195029 /* workday-solutionUITests */,
 				A6FB54D12077C03500195029 /* Products */,
+				A846E1E02EF9C8EAC7ED6127 /* Pods */,
+				438937D625DB67B54B190300 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +152,19 @@
 			path = "workday-solutionUITests";
 			sourceTree = "<group>";
 		};
+		A846E1E02EF9C8EAC7ED6127 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				77360D6FE8F1044E1E9814BF /* Pods-workday-solution.debug.xcconfig */,
+				915E2837726246D08099AB85 /* Pods-workday-solution.release.xcconfig */,
+				423A5340314B5C5DE4985249 /* Pods-workday-solutionTests.debug.xcconfig */,
+				B649E0DB47C29901581FAB63 /* Pods-workday-solutionTests.release.xcconfig */,
+				A2CD190A7110C4153DDC5D6B /* Pods-workday-solutionUITests.debug.xcconfig */,
+				431E545A1D4E5278E36D7B4A /* Pods-workday-solutionUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +172,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A6FB54F82077C03500195029 /* Build configuration list for PBXNativeTarget "workday-solution" */;
 			buildPhases = (
+				2F60FDC672ABE70FC5409E1E /* [CP] Check Pods Manifest.lock */,
 				A6FB54CC2077C03500195029 /* Sources */,
 				A6FB54CD2077C03500195029 /* Frameworks */,
 				A6FB54CE2077C03500195029 /* Resources */,
+				E3491712BCC64189CEAA9B4F /* [CP] Embed Pods Frameworks */,
+				C6146EB27DE6E008B4F65AA2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +192,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A6FB54FB2077C03500195029 /* Build configuration list for PBXNativeTarget "workday-solutionTests" */;
 			buildPhases = (
+				2A7C2660479C478CEF59EF18 /* [CP] Check Pods Manifest.lock */,
 				A6FB54E02077C03500195029 /* Sources */,
 				A6FB54E12077C03500195029 /* Frameworks */,
 				A6FB54E22077C03500195029 /* Resources */,
+				23E4A1BCC9F7280AA173A400 /* [CP] Embed Pods Frameworks */,
+				5A62DD400F1D55FD302CCAD3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +213,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A6FB54FE2077C03500195029 /* Build configuration list for PBXNativeTarget "workday-solutionUITests" */;
 			buildPhases = (
+				29569B618BF99B75CD2AC140 /* [CP] Check Pods Manifest.lock */,
 				A6FB54EB2077C03500195029 /* Sources */,
 				A6FB54EC2077C03500195029 /* Frameworks */,
 				A6FB54ED2077C03500195029 /* Resources */,
+				3DFD65415264E5B5AD684D64 /* [CP] Embed Pods Frameworks */,
+				C9AF2789ABA6BE5BE9B9727A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -253,6 +302,228 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		23E4A1BCC9F7280AA173A400 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-workday-solutionTests/Pods-workday-solutionTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/DynamicBlurView/DynamicBlurView.framework",
+				"${BUILT_PRODUCTS_DIR}/MarqueeLabel/MarqueeLabel.framework",
+				"${BUILT_PRODUCTS_DIR}/NotificationBannerSwift/NotificationBannerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Player/Player.framework",
+				"${BUILT_PRODUCTS_DIR}/Pooling/Pooling.framework",
+				"${BUILT_PRODUCTS_DIR}/PopupDialog/PopupDialog.framework",
+				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
+				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DynamicBlurView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MarqueeLabel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NotificationBannerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Player.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Pooling.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PopupDialog.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-workday-solutionTests/Pods-workday-solutionTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		29569B618BF99B75CD2AC140 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-workday-solutionUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2A7C2660479C478CEF59EF18 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-workday-solutionTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2F60FDC672ABE70FC5409E1E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-workday-solution-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3DFD65415264E5B5AD684D64 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-workday-solutionUITests/Pods-workday-solutionUITests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/DynamicBlurView/DynamicBlurView.framework",
+				"${BUILT_PRODUCTS_DIR}/MarqueeLabel/MarqueeLabel.framework",
+				"${BUILT_PRODUCTS_DIR}/NotificationBannerSwift/NotificationBannerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Player/Player.framework",
+				"${BUILT_PRODUCTS_DIR}/Pooling/Pooling.framework",
+				"${BUILT_PRODUCTS_DIR}/PopupDialog/PopupDialog.framework",
+				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
+				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DynamicBlurView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MarqueeLabel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NotificationBannerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Player.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Pooling.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PopupDialog.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-workday-solutionUITests/Pods-workday-solutionUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A62DD400F1D55FD302CCAD3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-workday-solutionTests/Pods-workday-solutionTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6146EB27DE6E008B4F65AA2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-workday-solution/Pods-workday-solution-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9AF2789ABA6BE5BE9B9727A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-workday-solutionUITests/Pods-workday-solutionUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3491712BCC64189CEAA9B4F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-workday-solution/Pods-workday-solution-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/DynamicBlurView/DynamicBlurView.framework",
+				"${BUILT_PRODUCTS_DIR}/MarqueeLabel/MarqueeLabel.framework",
+				"${BUILT_PRODUCTS_DIR}/NotificationBannerSwift/NotificationBannerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Player/Player.framework",
+				"${BUILT_PRODUCTS_DIR}/Pooling/Pooling.framework",
+				"${BUILT_PRODUCTS_DIR}/PopupDialog/PopupDialog.framework",
+				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
+				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DynamicBlurView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MarqueeLabel.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NotificationBannerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Player.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Pooling.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PopupDialog.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-workday-solution/Pods-workday-solution-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A6FB54CC2077C03500195029 /* Sources */ = {
@@ -424,6 +695,7 @@
 		};
 		A6FB54F92077C03500195029 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77360D6FE8F1044E1E9814BF /* Pods-workday-solution.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -439,6 +711,7 @@
 		};
 		A6FB54FA2077C03500195029 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 915E2837726246D08099AB85 /* Pods-workday-solution.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -454,6 +727,7 @@
 		};
 		A6FB54FC2077C03500195029 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 423A5340314B5C5DE4985249 /* Pods-workday-solutionTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -471,6 +745,7 @@
 		};
 		A6FB54FD2077C03500195029 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B649E0DB47C29901581FAB63 /* Pods-workday-solutionTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -488,6 +763,7 @@
 		};
 		A6FB54FF2077C03500195029 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2CD190A7110C4153DDC5D6B /* Pods-workday-solutionUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -504,6 +780,7 @@
 		};
 		A6FB55002077C03500195029 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 431E545A1D4E5278E36D7B4A /* Pods-workday-solutionUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

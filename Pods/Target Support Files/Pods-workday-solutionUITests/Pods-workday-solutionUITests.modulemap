@@ -1,0 +1,6 @@
+framework module Pods_workday_solutionUITests {
+  umbrella header "Pods-workday-solutionUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

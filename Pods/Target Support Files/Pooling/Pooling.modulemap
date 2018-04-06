@@ -1,0 +1,6 @@
+framework module Pooling {
+  umbrella header "Pooling-umbrella.h"
+
+  export *
+  module * { export * }
+}
