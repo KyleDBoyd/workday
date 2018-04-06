@@ -10,7 +10,7 @@
 		39223BF4A48D6E3E11910455 /* Pods_workday_solution.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9BB3A32362EAEB0394CE43A /* Pods_workday_solution.framework */; };
 		71795C40D7394F0F62C1BD4F /* Pods_workday_solutionUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C73E0CE06BB89C22EAD6E9D6 /* Pods_workday_solutionUITests.framework */; };
 		A6FB54D42077C03500195029 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FB54D32077C03500195029 /* AppDelegate.swift */; };
-		A6FB54D62077C03500195029 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FB54D52077C03500195029 /* ViewController.swift */; };
+		A6FB54D62077C03500195029 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FB54D52077C03500195029 /* LaunchViewController.swift */; };
 		A6FB54D92077C03500195029 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6FB54D72077C03500195029 /* Main.storyboard */; };
 		A6FB54DB2077C03500195029 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6FB54DA2077C03500195029 /* Assets.xcassets */; };
 		A6FB54DE2077C03500195029 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6FB54DC2077C03500195029 /* LaunchScreen.storyboard */; };
@@ -20,8 +20,6 @@
 		A6FB55032077C6B700195029 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FB55012077C6B700195029 /* APIService.swift */; };
 		A6FB55042077C6B700195029 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FB55012077C6B700195029 /* APIService.swift */; };
 		A6FB55062077C6E100195029 /* MediaCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FB55052077C6E100195029 /* MediaCollectionViewController.swift */; };
-		A6FB55072077C6E100195029 /* MediaCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FB55052077C6E100195029 /* MediaCollectionViewController.swift */; };
-		A6FB55082077C6E100195029 /* MediaCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FB55052077C6E100195029 /* MediaCollectionViewController.swift */; };
 		A6FB550B2077C6F900195029 /* MediaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FB55092077C6F900195029 /* MediaCollectionViewCell.swift */; };
 		A6FB550C2077C6F900195029 /* MediaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FB55092077C6F900195029 /* MediaCollectionViewCell.swift */; };
 		A6FB550D2077C6F900195029 /* MediaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FB55092077C6F900195029 /* MediaCollectionViewCell.swift */; };
@@ -29,8 +27,6 @@
 		A6FB550F2077C6F900195029 /* MediaCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6FB550A2077C6F900195029 /* MediaCollectionViewCell.xib */; };
 		A6FB55102077C6F900195029 /* MediaCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A6FB550A2077C6F900195029 /* MediaCollectionViewCell.xib */; };
 		A6FB55122077C72700195029 /* MediaPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FB55112077C72700195029 /* MediaPlayerViewController.swift */; };
-		A6FB55132077C72700195029 /* MediaPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FB55112077C72700195029 /* MediaPlayerViewController.swift */; };
-		A6FB55142077C72700195029 /* MediaPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FB55112077C72700195029 /* MediaPlayerViewController.swift */; };
 		A6FB55162077C73A00195029 /* UIStoryboard+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FB55152077C73A00195029 /* UIStoryboard+Extensions.swift */; };
 		A6FB55172077C73A00195029 /* UIStoryboard+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FB55152077C73A00195029 /* UIStoryboard+Extensions.swift */; };
 		A6FB55182077C73A00195029 /* UIStoryboard+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FB55152077C73A00195029 /* UIStoryboard+Extensions.swift */; };
@@ -63,7 +59,7 @@
 		A5FDE6D50A88B82A077B3D81 /* Pods_workday_solutionTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_workday_solutionTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6FB54D02077C03500195029 /* workday-solution.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "workday-solution.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6FB54D32077C03500195029 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A6FB54D52077C03500195029 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A6FB54D52077C03500195029 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
 		A6FB54D82077C03500195029 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A6FB54DA2077C03500195029 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A6FB54DD2077C03500195029 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -148,18 +144,15 @@
 		A6FB54D22077C03500195029 /* workday-solution */ = {
 			isa = PBXGroup;
 			children = (
+				A6FB551B2077CB6800195029 /* ViewControllers */,
+				A6FB551E2077CBA500195029 /* Views */,
+				A6FB551D2077CB9900195029 /* Networking */,
+				A6FB551C2077CB8500195029 /* Extensions */,
+				A6FB551A2077CB5500195029 /* Xibs */,
+				A6FB55192077CB4300195029 /* Storyboards */,
 				A6FB54D32077C03500195029 /* AppDelegate.swift */,
-				A6FB54D52077C03500195029 /* ViewController.swift */,
-				A6FB54D72077C03500195029 /* Main.storyboard */,
 				A6FB54DA2077C03500195029 /* Assets.xcassets */,
-				A6FB54DC2077C03500195029 /* LaunchScreen.storyboard */,
 				A6FB54DF2077C03500195029 /* Info.plist */,
-				A6FB55012077C6B700195029 /* APIService.swift */,
-				A6FB55052077C6E100195029 /* MediaCollectionViewController.swift */,
-				A6FB55092077C6F900195029 /* MediaCollectionViewCell.swift */,
-				A6FB550A2077C6F900195029 /* MediaCollectionViewCell.xib */,
-				A6FB55112077C72700195029 /* MediaPlayerViewController.swift */,
-				A6FB55152077C73A00195029 /* UIStoryboard+Extensions.swift */,
 			);
 			path = "workday-solution";
 			sourceTree = "<group>";
@@ -180,6 +173,57 @@
 				A6FB54F52077C03500195029 /* Info.plist */,
 			);
 			path = "workday-solutionUITests";
+			sourceTree = "<group>";
+		};
+		A6FB55192077CB4300195029 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				A6FB54D72077C03500195029 /* Main.storyboard */,
+				A6FB54DC2077C03500195029 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		A6FB551A2077CB5500195029 /* Xibs */ = {
+			isa = PBXGroup;
+			children = (
+				A6FB550A2077C6F900195029 /* MediaCollectionViewCell.xib */,
+			);
+			path = Xibs;
+			sourceTree = "<group>";
+		};
+		A6FB551B2077CB6800195029 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A6FB54D52077C03500195029 /* LaunchViewController.swift */,
+				A6FB55112077C72700195029 /* MediaPlayerViewController.swift */,
+				A6FB55052077C6E100195029 /* MediaCollectionViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A6FB551C2077CB8500195029 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A6FB55152077C73A00195029 /* UIStoryboard+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A6FB551D2077CB9900195029 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				A6FB55012077C6B700195029 /* APIService.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		A6FB551E2077CBA500195029 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A6FB55092077C6F900195029 /* MediaCollectionViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		A846E1E02EF9C8EAC7ED6127 /* Pods */ = {
@@ -564,7 +608,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6FB550B2077C6F900195029 /* MediaCollectionViewCell.swift in Sources */,
-				A6FB54D62077C03500195029 /* ViewController.swift in Sources */,
+				A6FB54D62077C03500195029 /* LaunchViewController.swift in Sources */,
 				A6FB55062077C6E100195029 /* MediaCollectionViewController.swift in Sources */,
 				A6FB55022077C6B700195029 /* APIService.swift in Sources */,
 				A6FB55122077C72700195029 /* MediaPlayerViewController.swift in Sources */,
@@ -580,9 +624,7 @@
 				A6FB55172077C73A00195029 /* UIStoryboard+Extensions.swift in Sources */,
 				A6FB55032077C6B700195029 /* APIService.swift in Sources */,
 				A6FB54E92077C03500195029 /* workday_solutionTests.swift in Sources */,
-				A6FB55072077C6E100195029 /* MediaCollectionViewController.swift in Sources */,
 				A6FB550C2077C6F900195029 /* MediaCollectionViewCell.swift in Sources */,
-				A6FB55132077C72700195029 /* MediaPlayerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -593,9 +635,7 @@
 				A6FB55182077C73A00195029 /* UIStoryboard+Extensions.swift in Sources */,
 				A6FB55042077C6B700195029 /* APIService.swift in Sources */,
 				A6FB54F42077C03500195029 /* workday_solutionUITests.swift in Sources */,
-				A6FB55082077C6E100195029 /* MediaCollectionViewController.swift in Sources */,
 				A6FB550D2077C6F900195029 /* MediaCollectionViewCell.swift in Sources */,
-				A6FB55142077C72700195029 /* MediaPlayerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
