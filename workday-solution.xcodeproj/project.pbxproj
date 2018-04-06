@@ -1,0 +1,563 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A6FB54D42077C03500195029 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FB54D32077C03500195029 /* AppDelegate.swift */; };
+		A6FB54D62077C03500195029 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FB54D52077C03500195029 /* ViewController.swift */; };
+		A6FB54D92077C03500195029 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6FB54D72077C03500195029 /* Main.storyboard */; };
+		A6FB54DB2077C03500195029 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6FB54DA2077C03500195029 /* Assets.xcassets */; };
+		A6FB54DE2077C03500195029 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6FB54DC2077C03500195029 /* LaunchScreen.storyboard */; };
+		A6FB54E92077C03500195029 /* workday_solutionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FB54E82077C03500195029 /* workday_solutionTests.swift */; };
+		A6FB54F42077C03500195029 /* workday_solutionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FB54F32077C03500195029 /* workday_solutionUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A6FB54E52077C03500195029 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A6FB54C82077C03500195029 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6FB54CF2077C03500195029;
+			remoteInfo = "workday-solution";
+		};
+		A6FB54F02077C03500195029 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A6FB54C82077C03500195029 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A6FB54CF2077C03500195029;
+			remoteInfo = "workday-solution";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A6FB54D02077C03500195029 /* workday-solution.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "workday-solution.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6FB54D32077C03500195029 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A6FB54D52077C03500195029 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A6FB54D82077C03500195029 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A6FB54DA2077C03500195029 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A6FB54DD2077C03500195029 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A6FB54DF2077C03500195029 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6FB54E42077C03500195029 /* workday-solutionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "workday-solutionTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6FB54E82077C03500195029 /* workday_solutionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = workday_solutionTests.swift; sourceTree = "<group>"; };
+		A6FB54EA2077C03500195029 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6FB54EF2077C03500195029 /* workday-solutionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "workday-solutionUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6FB54F32077C03500195029 /* workday_solutionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = workday_solutionUITests.swift; sourceTree = "<group>"; };
+		A6FB54F52077C03500195029 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A6FB54CD2077C03500195029 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6FB54E12077C03500195029 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6FB54EC2077C03500195029 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A6FB54C72077C03500195029 = {
+			isa = PBXGroup;
+			children = (
+				A6FB54D22077C03500195029 /* workday-solution */,
+				A6FB54E72077C03500195029 /* workday-solutionTests */,
+				A6FB54F22077C03500195029 /* workday-solutionUITests */,
+				A6FB54D12077C03500195029 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A6FB54D12077C03500195029 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A6FB54D02077C03500195029 /* workday-solution.app */,
+				A6FB54E42077C03500195029 /* workday-solutionTests.xctest */,
+				A6FB54EF2077C03500195029 /* workday-solutionUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A6FB54D22077C03500195029 /* workday-solution */ = {
+			isa = PBXGroup;
+			children = (
+				A6FB54D32077C03500195029 /* AppDelegate.swift */,
+				A6FB54D52077C03500195029 /* ViewController.swift */,
+				A6FB54D72077C03500195029 /* Main.storyboard */,
+				A6FB54DA2077C03500195029 /* Assets.xcassets */,
+				A6FB54DC2077C03500195029 /* LaunchScreen.storyboard */,
+				A6FB54DF2077C03500195029 /* Info.plist */,
+			);
+			path = "workday-solution";
+			sourceTree = "<group>";
+		};
+		A6FB54E72077C03500195029 /* workday-solutionTests */ = {
+			isa = PBXGroup;
+			children = (
+				A6FB54E82077C03500195029 /* workday_solutionTests.swift */,
+				A6FB54EA2077C03500195029 /* Info.plist */,
+			);
+			path = "workday-solutionTests";
+			sourceTree = "<group>";
+		};
+		A6FB54F22077C03500195029 /* workday-solutionUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A6FB54F32077C03500195029 /* workday_solutionUITests.swift */,
+				A6FB54F52077C03500195029 /* Info.plist */,
+			);
+			path = "workday-solutionUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A6FB54CF2077C03500195029 /* workday-solution */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6FB54F82077C03500195029 /* Build configuration list for PBXNativeTarget "workday-solution" */;
+			buildPhases = (
+				A6FB54CC2077C03500195029 /* Sources */,
+				A6FB54CD2077C03500195029 /* Frameworks */,
+				A6FB54CE2077C03500195029 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "workday-solution";
+			productName = "workday-solution";
+			productReference = A6FB54D02077C03500195029 /* workday-solution.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A6FB54E32077C03500195029 /* workday-solutionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6FB54FB2077C03500195029 /* Build configuration list for PBXNativeTarget "workday-solutionTests" */;
+			buildPhases = (
+				A6FB54E02077C03500195029 /* Sources */,
+				A6FB54E12077C03500195029 /* Frameworks */,
+				A6FB54E22077C03500195029 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A6FB54E62077C03500195029 /* PBXTargetDependency */,
+			);
+			name = "workday-solutionTests";
+			productName = "workday-solutionTests";
+			productReference = A6FB54E42077C03500195029 /* workday-solutionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A6FB54EE2077C03500195029 /* workday-solutionUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6FB54FE2077C03500195029 /* Build configuration list for PBXNativeTarget "workday-solutionUITests" */;
+			buildPhases = (
+				A6FB54EB2077C03500195029 /* Sources */,
+				A6FB54EC2077C03500195029 /* Frameworks */,
+				A6FB54ED2077C03500195029 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A6FB54F12077C03500195029 /* PBXTargetDependency */,
+			);
+			name = "workday-solutionUITests";
+			productName = "workday-solutionUITests";
+			productReference = A6FB54EF2077C03500195029 /* workday-solutionUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A6FB54C82077C03500195029 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = AmateMint;
+				TargetAttributes = {
+					A6FB54CF2077C03500195029 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+					};
+					A6FB54E32077C03500195029 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A6FB54CF2077C03500195029;
+					};
+					A6FB54EE2077C03500195029 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = A6FB54CF2077C03500195029;
+					};
+				};
+			};
+			buildConfigurationList = A6FB54CB2077C03500195029 /* Build configuration list for PBXProject "workday-solution" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A6FB54C72077C03500195029;
+			productRefGroup = A6FB54D12077C03500195029 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A6FB54CF2077C03500195029 /* workday-solution */,
+				A6FB54E32077C03500195029 /* workday-solutionTests */,
+				A6FB54EE2077C03500195029 /* workday-solutionUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A6FB54CE2077C03500195029 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6FB54DE2077C03500195029 /* LaunchScreen.storyboard in Resources */,
+				A6FB54DB2077C03500195029 /* Assets.xcassets in Resources */,
+				A6FB54D92077C03500195029 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6FB54E22077C03500195029 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6FB54ED2077C03500195029 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A6FB54CC2077C03500195029 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6FB54D62077C03500195029 /* ViewController.swift in Sources */,
+				A6FB54D42077C03500195029 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6FB54E02077C03500195029 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6FB54E92077C03500195029 /* workday_solutionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6FB54EB2077C03500195029 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6FB54F42077C03500195029 /* workday_solutionUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A6FB54E62077C03500195029 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A6FB54CF2077C03500195029 /* workday-solution */;
+			targetProxy = A6FB54E52077C03500195029 /* PBXContainerItemProxy */;
+		};
+		A6FB54F12077C03500195029 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A6FB54CF2077C03500195029 /* workday-solution */;
+			targetProxy = A6FB54F02077C03500195029 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A6FB54D72077C03500195029 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A6FB54D82077C03500195029 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A6FB54DC2077C03500195029 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A6FB54DD2077C03500195029 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A6FB54F62077C03500195029 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A6FB54F72077C03500195029 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A6FB54F92077C03500195029 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MR3R3WZ66Q;
+				INFOPLIST_FILE = "workday-solution/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AmateMint.workday-solution";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A6FB54FA2077C03500195029 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MR3R3WZ66Q;
+				INFOPLIST_FILE = "workday-solution/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AmateMint.workday-solution";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A6FB54FC2077C03500195029 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MR3R3WZ66Q;
+				INFOPLIST_FILE = "workday-solutionTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AmateMint.workday-solutionTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/workday-solution.app/workday-solution";
+			};
+			name = Debug;
+		};
+		A6FB54FD2077C03500195029 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MR3R3WZ66Q;
+				INFOPLIST_FILE = "workday-solutionTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AmateMint.workday-solutionTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/workday-solution.app/workday-solution";
+			};
+			name = Release;
+		};
+		A6FB54FF2077C03500195029 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MR3R3WZ66Q;
+				INFOPLIST_FILE = "workday-solutionUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AmateMint.workday-solutionUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "workday-solution";
+			};
+			name = Debug;
+		};
+		A6FB55002077C03500195029 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MR3R3WZ66Q;
+				INFOPLIST_FILE = "workday-solutionUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.AmateMint.workday-solutionUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "workday-solution";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A6FB54CB2077C03500195029 /* Build configuration list for PBXProject "workday-solution" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6FB54F62077C03500195029 /* Debug */,
+				A6FB54F72077C03500195029 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6FB54F82077C03500195029 /* Build configuration list for PBXNativeTarget "workday-solution" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6FB54F92077C03500195029 /* Debug */,
+				A6FB54FA2077C03500195029 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6FB54FB2077C03500195029 /* Build configuration list for PBXNativeTarget "workday-solutionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6FB54FC2077C03500195029 /* Debug */,
+				A6FB54FD2077C03500195029 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6FB54FE2077C03500195029 /* Build configuration list for PBXNativeTarget "workday-solutionUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6FB54FF2077C03500195029 /* Debug */,
+				A6FB55002077C03500195029 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A6FB54C82077C03500195029 /* Project object */;
+}
