@@ -36,19 +36,23 @@ class LaunchViewController: UIViewController {
     private func showLaunchLogo() {
         self.launchLogo.alpha = 0.0
         self.launchLogo.isHidden = false
+        self.progressBar.alpha = 0.0
+        self.progressBar.isHidden = false
         
         UIView.animate(withDuration: 1.5, delay: 0.0, options: UIViewAnimationOptions.curveEaseIn, animations: {
             self.launchLogo.alpha = 1.0
+            self.progressBar.alpha = 1.0
         }) { _ in
             self.loadMedia()
         }
     }
     
-    private func hideLaunchLogo() {
+    private func hideLaunchLogo( _ viewModel:MediaItemVM) {
         UIView.animate(withDuration: 1.5, delay: 2.0, options: UIViewAnimationOptions.curveEaseOut, animations: {
             self.launchLogo.alpha = 0.0
+            self.progressBar.alpha = 0.0
         }, completion: { (_) in
-            // Show CollectionView Controller
+            let controller = MediaCollectionViewController.controller()
         })
     }
     

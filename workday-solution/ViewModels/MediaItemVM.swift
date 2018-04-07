@@ -13,7 +13,7 @@ public typealias ProgressClosure = (Float) -> Void
 
 class MediaItemVM {
     
-    private var mediaItems:[MediaItem]
+    private(set) public var mediaItems:[MediaItem]
     
     init() {
         mediaItems = [MediaItem]()
