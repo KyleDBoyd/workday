@@ -13,6 +13,8 @@ def shared_pods
     pod 'PopupDialog', '~> 0.7'
     pod 'NotificationBannerSwift', '~> 1.6'
     pod 'HTTPStatusCodes', '~> 3.2'
+    pod 'Cache', '~> 4.2'
+    pod 'GradientProgressBar', '~> 1.2'
 end
 
 target 'workday-solution' do

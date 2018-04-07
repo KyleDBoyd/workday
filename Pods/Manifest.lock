@@ -1,6 +1,8 @@
 PODS:
   - Alamofire (4.7.0)
+  - Cache (4.2.0)
   - DynamicBlurView (2.0.2)
+  - GradientProgressBar (1.2.1)
   - HTTPStatusCodes (3.2.0)
   - MarqueeLabel/Swift (3.1.4)
   - NotificationBannerSwift (1.6.2):
@@ -32,6 +34,8 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire (~> 4.7)
+  - Cache (~> 4.2)
+  - GradientProgressBar (~> 1.2)
   - HTTPStatusCodes (~> 3.2)
   - NotificationBannerSwift (~> 1.6)
   - Player (~> 0.8.4)
@@ -44,7 +48,9 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   Alamofire: 907e0a98eb68cdb7f9d1f541a563d6ac5dc77b25
+  Cache: f28f8dd64b632155aabf9b3906b036a659048251
   DynamicBlurView: aa6db4defc6e537eb86fc5e58dd3991666178399
+  GradientProgressBar: 00c7066ee3a1a7a3eb0419ff953f28c8ddf6bd91
   HTTPStatusCodes: 69f50d229c4b5d6dcb48fad9c86e32ded975bcd3
   MarqueeLabel: bf768455fe88d427f71476ebb23f9092b660f40b
   NotificationBannerSwift: 4eceb2add9d5eaa0596c63d49690b4d6476e74ec
@@ -57,6 +63,6 @@ SPEC CHECKSUMS:
   RealmSwift: b2fa31a09c22e246026766557405505eeaad2b01
   SnapKit: a42d492c16e80209130a3379f73596c3454b7694
 
-PODFILE CHECKSUM: 68d388aff347520da5348e1cc3e678653d5baaa6
+PODFILE CHECKSUM: 483dbeb7f4790f9fe86f93783bedbafbee58e360
 
 COCOAPODS: 1.3.1

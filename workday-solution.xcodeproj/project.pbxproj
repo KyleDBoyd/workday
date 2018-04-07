@@ -15,6 +15,11 @@
 		A626AF8120787369007F531B /* MediaItemArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = A626AF8020787369007F531B /* MediaItemArray.swift */; };
 		A626AF8220787369007F531B /* MediaItemArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = A626AF8020787369007F531B /* MediaItemArray.swift */; };
 		A626AF8320787369007F531B /* MediaItemArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = A626AF8020787369007F531B /* MediaItemArray.swift */; };
+		A64B9D1B2078870F0031B47F /* MediaItemVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64B9D1A2078870F0031B47F /* MediaItemVM.swift */; };
+		A64B9D1C2078870F0031B47F /* MediaItemVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64B9D1A2078870F0031B47F /* MediaItemVM.swift */; };
+		A64B9D1D2078870F0031B47F /* MediaItemVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64B9D1A2078870F0031B47F /* MediaItemVM.swift */; };
+		A64B9D1E207929BC0031B47F /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FB55012077C6B700195029 /* APIService.swift */; };
+		A64B9D1F207929BD0031B47F /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FB55012077C6B700195029 /* APIService.swift */; };
 		A6BBA60B2077DC9F001AEE47 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BBA60A2077DC9F001AEE47 /* Strings.swift */; };
 		A6BBA60C2077DC9F001AEE47 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BBA60A2077DC9F001AEE47 /* Strings.swift */; };
 		A6BBA60D2077DC9F001AEE47 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BBA60A2077DC9F001AEE47 /* Strings.swift */; };
@@ -71,6 +76,7 @@
 		A5FDE6D50A88B82A077B3D81 /* Pods_workday_solutionTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_workday_solutionTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A626AF7C2078706C007F531B /* Alamofire+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Alamofire+Extensions.swift"; sourceTree = "<group>"; };
 		A626AF8020787369007F531B /* MediaItemArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaItemArray.swift; sourceTree = "<group>"; };
+		A64B9D1A2078870F0031B47F /* MediaItemVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaItemVM.swift; sourceTree = "<group>"; };
 		A6BBA60A2077DC9F001AEE47 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		A6FB54D02077C03500195029 /* workday-solution.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "workday-solution.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6FB54D32077C03500195029 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -135,6 +141,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A64B9D19207886F70031B47F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A64B9D1A2078870F0031B47F /* MediaItemVM.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		A6FB54C72077C03500195029 = {
 			isa = PBXGroup;
 			children = (
@@ -160,6 +174,7 @@
 		A6FB54D22077C03500195029 /* workday-solution */ = {
 			isa = PBXGroup;
 			children = (
+				A64B9D19207886F70031B47F /* ViewModels */,
 				A6FB55212077D69200195029 /* Models */,
 				A6FB551B2077CB6800195029 /* ViewControllers */,
 				A6FB551E2077CBA500195029 /* Views */,
@@ -417,7 +432,9 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-workday-solutionTests/Pods-workday-solutionTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Cache/Cache.framework",
 				"${BUILT_PRODUCTS_DIR}/DynamicBlurView/DynamicBlurView.framework",
+				"${BUILT_PRODUCTS_DIR}/GradientProgressBar/GradientProgressBar.framework",
 				"${BUILT_PRODUCTS_DIR}/HTTPStatusCodes/HTTPStatusCodes.framework",
 				"${BUILT_PRODUCTS_DIR}/MarqueeLabel/MarqueeLabel.framework",
 				"${BUILT_PRODUCTS_DIR}/NotificationBannerSwift/NotificationBannerSwift.framework",
@@ -433,7 +450,9 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cache.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DynamicBlurView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GradientProgressBar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HTTPStatusCodes.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MarqueeLabel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NotificationBannerSwift.framework",
@@ -513,7 +532,9 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-workday-solutionUITests/Pods-workday-solutionUITests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Cache/Cache.framework",
 				"${BUILT_PRODUCTS_DIR}/DynamicBlurView/DynamicBlurView.framework",
+				"${BUILT_PRODUCTS_DIR}/GradientProgressBar/GradientProgressBar.framework",
 				"${BUILT_PRODUCTS_DIR}/HTTPStatusCodes/HTTPStatusCodes.framework",
 				"${BUILT_PRODUCTS_DIR}/MarqueeLabel/MarqueeLabel.framework",
 				"${BUILT_PRODUCTS_DIR}/NotificationBannerSwift/NotificationBannerSwift.framework",
@@ -529,7 +550,9 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cache.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DynamicBlurView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GradientProgressBar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HTTPStatusCodes.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MarqueeLabel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NotificationBannerSwift.framework",
@@ -600,7 +623,9 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-workday-solution/Pods-workday-solution-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Cache/Cache.framework",
 				"${BUILT_PRODUCTS_DIR}/DynamicBlurView/DynamicBlurView.framework",
+				"${BUILT_PRODUCTS_DIR}/GradientProgressBar/GradientProgressBar.framework",
 				"${BUILT_PRODUCTS_DIR}/HTTPStatusCodes/HTTPStatusCodes.framework",
 				"${BUILT_PRODUCTS_DIR}/MarqueeLabel/MarqueeLabel.framework",
 				"${BUILT_PRODUCTS_DIR}/NotificationBannerSwift/NotificationBannerSwift.framework",
@@ -616,7 +641,9 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cache.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DynamicBlurView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GradientProgressBar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HTTPStatusCodes.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MarqueeLabel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NotificationBannerSwift.framework",
@@ -643,6 +670,7 @@
 			files = (
 				A6FB550B2077C6F900195029 /* MediaCollectionViewCell.swift in Sources */,
 				A626AF8120787369007F531B /* MediaItemArray.swift in Sources */,
+				A64B9D1B2078870F0031B47F /* MediaItemVM.swift in Sources */,
 				A6BBA60B2077DC9F001AEE47 /* Strings.swift in Sources */,
 				A626AF7D2078706C007F531B /* Alamofire+Extensions.swift in Sources */,
 				A6FB55232077D6C400195029 /* MediaItem.swift in Sources */,
@@ -665,8 +693,10 @@
 				A6FB54E92077C03500195029 /* workday_solutionTests.swift in Sources */,
 				A6FB550C2077C6F900195029 /* MediaCollectionViewCell.swift in Sources */,
 				A626AF8220787369007F531B /* MediaItemArray.swift in Sources */,
+				A64B9D1E207929BC0031B47F /* APIService.swift in Sources */,
 				A6FB55242077D6C400195029 /* MediaItem.swift in Sources */,
 				A6BBA60C2077DC9F001AEE47 /* Strings.swift in Sources */,
+				A64B9D1C2078870F0031B47F /* MediaItemVM.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -680,8 +710,10 @@
 				A6FB54F42077C03500195029 /* workday_solutionUITests.swift in Sources */,
 				A6FB550D2077C6F900195029 /* MediaCollectionViewCell.swift in Sources */,
 				A626AF8320787369007F531B /* MediaItemArray.swift in Sources */,
+				A64B9D1F207929BD0031B47F /* APIService.swift in Sources */,
 				A6FB55252077D6C400195029 /* MediaItem.swift in Sources */,
 				A6BBA60D2077DC9F001AEE47 /* Strings.swift in Sources */,
+				A64B9D1D2078870F0031B47F /* MediaItemVM.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -14,5 +14,9 @@ class MediaCollectionViewCell: UICollectionViewCell {
         super.awakeFromNib()
         // Initialization code
     }
+    
+    func configure(_ item:MediaItem) {
+        
+    }
 
 }

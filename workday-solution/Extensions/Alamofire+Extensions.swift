@@ -33,7 +33,6 @@ extension Alamofire.DataRequest {
     }
     
     public func responseSuccess() -> Promise<Bool> {
-        
         return Promise { seal in
             responseData(queue: nil) { response in
                 switch response.result {

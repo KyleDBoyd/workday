@@ -29,4 +29,23 @@ class APIService {
         let url = Strings.API.baseURL + "/" + Strings.API.Routes.media + "/" + item
         return Alamofire.request(url, method: .get).responseCodable()
     }
+    
+    func downloadMediaItems(_ items:[String], resultArray: [MediaItem] ) -> Promise<[MediaItem]> {
+        var idArray = items
+        guard let mediaId = idArray.popLast() else {
+            // Array is empty, return the populated resultArray
+            return Promise { seal in
+                seal.fulfill(resultArray)
+            }
+        }
+        return APIService.sharedInstance.getMediaItem(mediaId).then { mediaItemArray -> Promise<[MediaItem]> in
+            guard let item = mediaItemArray.id?.first else {
+                return self.downloadMediaItems(idArray, resultArray: resultArray)
+            }
+            var arrayCopy = [MediaItem]()
+            arrayCopy.append(contentsOf:resultArray)
+            arrayCopy.append(item)
+            return self.downloadMediaItems(idArray, resultArray: arrayCopy)
+        }
+    }
 }
