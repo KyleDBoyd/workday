@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		39223BF4A48D6E3E11910455 /* Pods_workday_solution.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9BB3A32362EAEB0394CE43A /* Pods_workday_solution.framework */; };
 		71795C40D7394F0F62C1BD4F /* Pods_workday_solutionUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C73E0CE06BB89C22EAD6E9D6 /* Pods_workday_solutionUITests.framework */; };
+		A6BBA60B2077DC9F001AEE47 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BBA60A2077DC9F001AEE47 /* Strings.swift */; };
+		A6BBA60C2077DC9F001AEE47 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BBA60A2077DC9F001AEE47 /* Strings.swift */; };
+		A6BBA60D2077DC9F001AEE47 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BBA60A2077DC9F001AEE47 /* Strings.swift */; };
 		A6FB54D42077C03500195029 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FB54D32077C03500195029 /* AppDelegate.swift */; };
 		A6FB54D62077C03500195029 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FB54D52077C03500195029 /* LaunchViewController.swift */; };
 		A6FB54D92077C03500195029 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6FB54D72077C03500195029 /* Main.storyboard */; };
@@ -17,8 +20,6 @@
 		A6FB54E92077C03500195029 /* workday_solutionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FB54E82077C03500195029 /* workday_solutionTests.swift */; };
 		A6FB54F42077C03500195029 /* workday_solutionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FB54F32077C03500195029 /* workday_solutionUITests.swift */; };
 		A6FB55022077C6B700195029 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FB55012077C6B700195029 /* APIService.swift */; };
-		A6FB55032077C6B700195029 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FB55012077C6B700195029 /* APIService.swift */; };
-		A6FB55042077C6B700195029 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FB55012077C6B700195029 /* APIService.swift */; };
 		A6FB55062077C6E100195029 /* MediaCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FB55052077C6E100195029 /* MediaCollectionViewController.swift */; };
 		A6FB550B2077C6F900195029 /* MediaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FB55092077C6F900195029 /* MediaCollectionViewCell.swift */; };
 		A6FB550C2077C6F900195029 /* MediaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FB55092077C6F900195029 /* MediaCollectionViewCell.swift */; };
@@ -32,6 +33,9 @@
 		A6FB55182077C73A00195029 /* UIStoryboard+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FB55152077C73A00195029 /* UIStoryboard+Extensions.swift */; };
 		A6FB551F2077CE7C00195029 /* MediaCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FB55052077C6E100195029 /* MediaCollectionViewController.swift */; };
 		A6FB55202077CE8300195029 /* MediaCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FB55052077C6E100195029 /* MediaCollectionViewController.swift */; };
+		A6FB55232077D6C400195029 /* MediaItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FB55222077D6C400195029 /* MediaItem.swift */; };
+		A6FB55242077D6C400195029 /* MediaItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FB55222077D6C400195029 /* MediaItem.swift */; };
+		A6FB55252077D6C400195029 /* MediaItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FB55222077D6C400195029 /* MediaItem.swift */; };
 		B4BCD5F03A5A6C670E617790 /* Pods_workday_solutionTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5FDE6D50A88B82A077B3D81 /* Pods_workday_solutionTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +63,7 @@
 		915E2837726246D08099AB85 /* Pods-workday-solution.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-workday-solution.release.xcconfig"; path = "Pods/Target Support Files/Pods-workday-solution/Pods-workday-solution.release.xcconfig"; sourceTree = "<group>"; };
 		A2CD190A7110C4153DDC5D6B /* Pods-workday-solutionUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-workday-solutionUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-workday-solutionUITests/Pods-workday-solutionUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A5FDE6D50A88B82A077B3D81 /* Pods_workday_solutionTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_workday_solutionTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6BBA60A2077DC9F001AEE47 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		A6FB54D02077C03500195029 /* workday-solution.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "workday-solution.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6FB54D32077C03500195029 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6FB54D52077C03500195029 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
@@ -78,6 +83,7 @@
 		A6FB550A2077C6F900195029 /* MediaCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MediaCollectionViewCell.xib; sourceTree = "<group>"; };
 		A6FB55112077C72700195029 /* MediaPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaPlayerViewController.swift; sourceTree = "<group>"; };
 		A6FB55152077C73A00195029 /* UIStoryboard+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Extensions.swift"; sourceTree = "<group>"; };
+		A6FB55222077D6C400195029 /* MediaItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaItem.swift; sourceTree = "<group>"; };
 		B649E0DB47C29901581FAB63 /* Pods-workday-solutionTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-workday-solutionTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-workday-solutionTests/Pods-workday-solutionTests.release.xcconfig"; sourceTree = "<group>"; };
 		C73E0CE06BB89C22EAD6E9D6 /* Pods_workday_solutionUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_workday_solutionUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9BB3A32362EAEB0394CE43A /* Pods_workday_solution.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_workday_solution.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -146,6 +152,7 @@
 		A6FB54D22077C03500195029 /* workday-solution */ = {
 			isa = PBXGroup;
 			children = (
+				A6FB55212077D69200195029 /* Models */,
 				A6FB551B2077CB6800195029 /* ViewControllers */,
 				A6FB551E2077CBA500195029 /* Views */,
 				A6FB551D2077CB9900195029 /* Networking */,
@@ -155,6 +162,7 @@
 				A6FB54D32077C03500195029 /* AppDelegate.swift */,
 				A6FB54DA2077C03500195029 /* Assets.xcassets */,
 				A6FB54DF2077C03500195029 /* Info.plist */,
+				A6BBA60A2077DC9F001AEE47 /* Strings.swift */,
 			);
 			path = "workday-solution";
 			sourceTree = "<group>";
@@ -226,6 +234,14 @@
 				A6FB55092077C6F900195029 /* MediaCollectionViewCell.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		A6FB55212077D69200195029 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A6FB55222077D6C400195029 /* MediaItem.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		A846E1E02EF9C8EAC7ED6127 /* Pods */ = {
@@ -610,6 +626,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6FB550B2077C6F900195029 /* MediaCollectionViewCell.swift in Sources */,
+				A6BBA60B2077DC9F001AEE47 /* Strings.swift in Sources */,
+				A6FB55232077D6C400195029 /* MediaItem.swift in Sources */,
 				A6FB54D62077C03500195029 /* LaunchViewController.swift in Sources */,
 				A6FB55062077C6E100195029 /* MediaCollectionViewController.swift in Sources */,
 				A6FB55022077C6B700195029 /* APIService.swift in Sources */,
@@ -624,10 +642,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6FB55172077C73A00195029 /* UIStoryboard+Extensions.swift in Sources */,
-				A6FB55032077C6B700195029 /* APIService.swift in Sources */,
 				A6FB551F2077CE7C00195029 /* MediaCollectionViewController.swift in Sources */,
 				A6FB54E92077C03500195029 /* workday_solutionTests.swift in Sources */,
 				A6FB550C2077C6F900195029 /* MediaCollectionViewCell.swift in Sources */,
+				A6FB55242077D6C400195029 /* MediaItem.swift in Sources */,
+				A6BBA60C2077DC9F001AEE47 /* Strings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -636,10 +655,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6FB55182077C73A00195029 /* UIStoryboard+Extensions.swift in Sources */,
-				A6FB55042077C6B700195029 /* APIService.swift in Sources */,
 				A6FB55202077CE8300195029 /* MediaCollectionViewController.swift in Sources */,
 				A6FB54F42077C03500195029 /* workday_solutionUITests.swift in Sources */,
 				A6FB550D2077C6F900195029 /* MediaCollectionViewCell.swift in Sources */,
+				A6FB55252077D6C400195029 /* MediaItem.swift in Sources */,
+				A6BBA60D2077DC9F001AEE47 /* Strings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

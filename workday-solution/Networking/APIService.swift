@@ -6,10 +6,10 @@
 //  Copyright © 2018 AmateMint. All rights reserved.
 //
 
-import Foundation
-import Alamofire
+import UIKit
 import PromiseKit
-import Realm
+import Alamofire
+import RealmSwift
 
 // Inherit from Response Object to Return from Request
 protocol ResponseObject {
@@ -18,46 +18,37 @@ protocol ResponseObject {
 extension Bool : ResponseObject {
 }
 
-protocol RequestManagerProtocol {
-    func requestWithMethod<T:ResponseObject>(_ method: HTTPMethod, apiCall: String, params: [String: AnyObject], headers:[String: String], encoding: Alamofire.ParameterEncoding) -> Promise<T>
+extension Array : ResponseObject {
 }
 
 class APIService {
     
     static let sharedInstance = APIService()
     
-    func ping() {
+    func ping() -> Promise<Bool> {
         
-    }
+        let url = Strings.API.baseURL + "/" + Strings.API.Routes.health
     
-    func getAllMedia() {
-        
-    }
-    
-    func getMediaItem() {
-        
-    }
-    
-}
+        return firstly {
+            Alamofire.request(url, method: .get).responseData()
+            }.map {resp, data in
+                if data.response?.statusCode == 200 {
+                    return true
+                } else {
+                    return false
+                }
+        }
 
-class NetworkManager {
-    static let sharedInstance = NetworkManager()
+    }
     
-    let defaultManager: Alamofire.SessionManager = {
-        let serverTrustPolicies: [String: ServerTrustPolicy] = [:]
-        
-        let configuration = URLSessionConfiguration.default
-        configuration.httpAdditionalHeaders = Alamofire.SessionManager.defaultHTTPHeaders
-        
-        return Alamofire.SessionManager (
-            configuration: configuration,
-            serverTrustPolicyManager: ServerTrustPolicyManager(policies: serverTrustPolicies)
-        )
-    }()
-}
-
-class RequestManager : RequestManagerProtocol {
-    func requestWithMethod<T:ResponseObject>(_ method: HTTPMethod, apiCall: String, params: [String: AnyObject], headers:[String: String], encoding: Alamofire.ParameterEncoding) -> Promise<T> {
+    func getAllMedia() -> Promise<[String]> {
+        return Promise { seal in
+            
+            
+        }
+    }
+    
+    func getMediaItem(_ item:String) -> Promise<MediaItem> {
         return Promise { seal in
             
         }

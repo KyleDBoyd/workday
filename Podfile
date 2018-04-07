@@ -12,6 +12,7 @@ def shared_pods
     pod 'Pooling', '~> 1.0'
     pod 'PopupDialog', '~> 0.7'
     pod 'NotificationBannerSwift', '~> 1.6'
+    pod 'HTTPStatusCodes', '~> 3.2'
 end
 
 target 'workday-solution' do
