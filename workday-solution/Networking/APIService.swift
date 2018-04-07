@@ -11,46 +11,22 @@ import PromiseKit
 import Alamofire
 import RealmSwift
 
-// Inherit from Response Object to Return from Request
-protocol ResponseObject {
-}
-
-extension Bool : ResponseObject {
-}
-
-extension Array : ResponseObject {
-}
-
 class APIService {
     
     static let sharedInstance = APIService()
     
     func ping() -> Promise<Bool> {
-        
         let url = Strings.API.baseURL + "/" + Strings.API.Routes.health
-    
-        return firstly {
-            Alamofire.request(url, method: .get).responseData()
-            }.map {resp, data in
-                if data.response?.statusCode == 200 {
-                    return true
-                } else {
-                    return false
-                }
-        }
-
+        return Alamofire.request(url, method: .get).responseSuccess()
     }
     
-    func getAllMedia() -> Promise<[String]> {
-        return Promise { seal in
-            
-            
-        }
+    func getAllMedia() -> Promise<MediaItems> {
+        let url = Strings.API.baseURL + "/" + Strings.API.Routes.media
+        return Alamofire.request(url, method: .get).responseCodable()
     }
     
-    func getMediaItem(_ item:String) -> Promise<MediaItem> {
-        return Promise { seal in
-            
-        }
+    func getMediaItem(_ item:String) -> Promise<MediaItemArray> {
+        let url = Strings.API.baseURL + "/" + Strings.API.Routes.media + "/" + item
+        return Alamofire.request(url, method: .get).responseCodable()
     }
 }

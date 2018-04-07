@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		39223BF4A48D6E3E11910455 /* Pods_workday_solution.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9BB3A32362EAEB0394CE43A /* Pods_workday_solution.framework */; };
 		71795C40D7394F0F62C1BD4F /* Pods_workday_solutionUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C73E0CE06BB89C22EAD6E9D6 /* Pods_workday_solutionUITests.framework */; };
+		A626AF7D2078706C007F531B /* Alamofire+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A626AF7C2078706C007F531B /* Alamofire+Extensions.swift */; };
+		A626AF7E2078706C007F531B /* Alamofire+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A626AF7C2078706C007F531B /* Alamofire+Extensions.swift */; };
+		A626AF7F2078706C007F531B /* Alamofire+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A626AF7C2078706C007F531B /* Alamofire+Extensions.swift */; };
+		A626AF8120787369007F531B /* MediaItemArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = A626AF8020787369007F531B /* MediaItemArray.swift */; };
+		A626AF8220787369007F531B /* MediaItemArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = A626AF8020787369007F531B /* MediaItemArray.swift */; };
+		A626AF8320787369007F531B /* MediaItemArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = A626AF8020787369007F531B /* MediaItemArray.swift */; };
 		A6BBA60B2077DC9F001AEE47 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BBA60A2077DC9F001AEE47 /* Strings.swift */; };
 		A6BBA60C2077DC9F001AEE47 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BBA60A2077DC9F001AEE47 /* Strings.swift */; };
 		A6BBA60D2077DC9F001AEE47 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BBA60A2077DC9F001AEE47 /* Strings.swift */; };
@@ -63,6 +69,8 @@
 		915E2837726246D08099AB85 /* Pods-workday-solution.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-workday-solution.release.xcconfig"; path = "Pods/Target Support Files/Pods-workday-solution/Pods-workday-solution.release.xcconfig"; sourceTree = "<group>"; };
 		A2CD190A7110C4153DDC5D6B /* Pods-workday-solutionUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-workday-solutionUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-workday-solutionUITests/Pods-workday-solutionUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A5FDE6D50A88B82A077B3D81 /* Pods_workday_solutionTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_workday_solutionTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A626AF7C2078706C007F531B /* Alamofire+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Alamofire+Extensions.swift"; sourceTree = "<group>"; };
+		A626AF8020787369007F531B /* MediaItemArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaItemArray.swift; sourceTree = "<group>"; };
 		A6BBA60A2077DC9F001AEE47 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		A6FB54D02077C03500195029 /* workday-solution.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "workday-solution.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6FB54D32077C03500195029 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -216,6 +224,7 @@
 			isa = PBXGroup;
 			children = (
 				A6FB55152077C73A00195029 /* UIStoryboard+Extensions.swift */,
+				A626AF7C2078706C007F531B /* Alamofire+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -240,6 +249,7 @@
 			isa = PBXGroup;
 			children = (
 				A6FB55222077D6C400195029 /* MediaItem.swift */,
+				A626AF8020787369007F531B /* MediaItemArray.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -329,7 +339,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0900;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = AmateMint;
 				TargetAttributes = {
 					A6FB54CF2077C03500195029 = {
@@ -408,6 +418,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-workday-solutionTests/Pods-workday-solutionTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/DynamicBlurView/DynamicBlurView.framework",
+				"${BUILT_PRODUCTS_DIR}/HTTPStatusCodes/HTTPStatusCodes.framework",
 				"${BUILT_PRODUCTS_DIR}/MarqueeLabel/MarqueeLabel.framework",
 				"${BUILT_PRODUCTS_DIR}/NotificationBannerSwift/NotificationBannerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Player/Player.framework",
@@ -423,6 +434,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DynamicBlurView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HTTPStatusCodes.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MarqueeLabel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NotificationBannerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Player.framework",
@@ -502,6 +514,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-workday-solutionUITests/Pods-workday-solutionUITests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/DynamicBlurView/DynamicBlurView.framework",
+				"${BUILT_PRODUCTS_DIR}/HTTPStatusCodes/HTTPStatusCodes.framework",
 				"${BUILT_PRODUCTS_DIR}/MarqueeLabel/MarqueeLabel.framework",
 				"${BUILT_PRODUCTS_DIR}/NotificationBannerSwift/NotificationBannerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Player/Player.framework",
@@ -517,6 +530,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DynamicBlurView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HTTPStatusCodes.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MarqueeLabel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NotificationBannerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Player.framework",
@@ -587,6 +601,7 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-workday-solution/Pods-workday-solution-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/DynamicBlurView/DynamicBlurView.framework",
+				"${BUILT_PRODUCTS_DIR}/HTTPStatusCodes/HTTPStatusCodes.framework",
 				"${BUILT_PRODUCTS_DIR}/MarqueeLabel/MarqueeLabel.framework",
 				"${BUILT_PRODUCTS_DIR}/NotificationBannerSwift/NotificationBannerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Player/Player.framework",
@@ -602,6 +617,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DynamicBlurView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HTTPStatusCodes.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MarqueeLabel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NotificationBannerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Player.framework",
@@ -626,7 +642,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6FB550B2077C6F900195029 /* MediaCollectionViewCell.swift in Sources */,
+				A626AF8120787369007F531B /* MediaItemArray.swift in Sources */,
 				A6BBA60B2077DC9F001AEE47 /* Strings.swift in Sources */,
+				A626AF7D2078706C007F531B /* Alamofire+Extensions.swift in Sources */,
 				A6FB55232077D6C400195029 /* MediaItem.swift in Sources */,
 				A6FB54D62077C03500195029 /* LaunchViewController.swift in Sources */,
 				A6FB55062077C6E100195029 /* MediaCollectionViewController.swift in Sources */,
@@ -642,9 +660,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6FB55172077C73A00195029 /* UIStoryboard+Extensions.swift in Sources */,
+				A626AF7E2078706C007F531B /* Alamofire+Extensions.swift in Sources */,
 				A6FB551F2077CE7C00195029 /* MediaCollectionViewController.swift in Sources */,
 				A6FB54E92077C03500195029 /* workday_solutionTests.swift in Sources */,
 				A6FB550C2077C6F900195029 /* MediaCollectionViewCell.swift in Sources */,
+				A626AF8220787369007F531B /* MediaItemArray.swift in Sources */,
 				A6FB55242077D6C400195029 /* MediaItem.swift in Sources */,
 				A6BBA60C2077DC9F001AEE47 /* Strings.swift in Sources */,
 			);
@@ -655,9 +675,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6FB55182077C73A00195029 /* UIStoryboard+Extensions.swift in Sources */,
+				A626AF7F2078706C007F531B /* Alamofire+Extensions.swift in Sources */,
 				A6FB55202077CE8300195029 /* MediaCollectionViewController.swift in Sources */,
 				A6FB54F42077C03500195029 /* workday_solutionUITests.swift in Sources */,
 				A6FB550D2077C6F900195029 /* MediaCollectionViewCell.swift in Sources */,
+				A626AF8320787369007F531B /* MediaItemArray.swift in Sources */,
 				A6FB55252077D6C400195029 /* MediaItem.swift in Sources */,
 				A6BBA60D2077DC9F001AEE47 /* Strings.swift in Sources */,
 			);
@@ -712,6 +734,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -719,6 +742,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -769,6 +793,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -776,6 +801,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -841,7 +867,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 423A5340314B5C5DE4985249 /* Pods-workday-solutionTests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MR3R3WZ66Q;
@@ -859,7 +885,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B649E0DB47C29901581FAB63 /* Pods-workday-solutionTests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MR3R3WZ66Q;
@@ -877,7 +903,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A2CD190A7110C4153DDC5D6B /* Pods-workday-solutionUITests.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MR3R3WZ66Q;
 				INFOPLIST_FILE = "workday-solutionUITests/Info.plist";
@@ -894,7 +920,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 431E545A1D4E5278E36D7B4A /* Pods-workday-solutionUITests.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MR3R3WZ66Q;
 				INFOPLIST_FILE = "workday-solutionUITests/Info.plist";

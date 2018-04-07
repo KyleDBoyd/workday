@@ -16,4 +16,5 @@ struct Strings {
             static let health = "healthcheck"
         }
     }
+    static let emptyString = ""
 }

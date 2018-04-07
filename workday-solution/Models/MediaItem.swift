@@ -6,9 +6,16 @@
 //  Copyright © 2018 AmateMint. All rights reserved.
 //
 
-import UIKit
-import RealmSwift
+import Foundation
 
-class MediaItem: ResponseObject {
-    
+struct MediaItemArray: Codable {
+    var id:[MediaItem]?
+}
+
+struct MediaItem : Codable {
+    var id:String?
+    var name:String?
+    var url:String?
+    var quality:String?
+    var duration:Double?
 }
