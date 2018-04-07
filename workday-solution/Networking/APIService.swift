@@ -30,22 +30,26 @@ class APIService {
         return Alamofire.request(url, method: .get).responseCodable()
     }
     
-    func downloadMediaItems(_ items:[String], resultArray: [MediaItem] ) -> Promise<[MediaItem]> {
+    func downloadMediaItems(_ items:[String], resultArray: [MediaItem], progressClosure:@escaping ProgressClosure) -> Promise<[MediaItem]> {
         var idArray = items
         guard let mediaId = idArray.popLast() else {
             // Array is empty, return the populated resultArray
             return Promise { seal in
+                let progress:Float = Float(resultArray.count)/Float((idArray.count + resultArray.count))
+                progressClosure(progress)
                 seal.fulfill(resultArray)
             }
         }
         return APIService.sharedInstance.getMediaItem(mediaId).then { mediaItemArray -> Promise<[MediaItem]> in
             guard let item = mediaItemArray.id?.first else {
-                return self.downloadMediaItems(idArray, resultArray: resultArray)
+                return self.downloadMediaItems(idArray, resultArray: resultArray, progressClosure: progressClosure)
             }
             var arrayCopy = [MediaItem]()
             arrayCopy.append(contentsOf:resultArray)
             arrayCopy.append(item)
-            return self.downloadMediaItems(idArray, resultArray: arrayCopy)
+            let progress:Float = Float(arrayCopy.count)/Float((idArray.count + arrayCopy.count))
+            progressClosure(progress)
+            return self.downloadMediaItems(idArray, resultArray: arrayCopy, progressClosure: progressClosure)
         }
     }
 }

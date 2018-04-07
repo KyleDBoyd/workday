@@ -9,6 +9,8 @@
 import Foundation
 import PromiseKit
 
+public typealias ProgressClosure = (Float) -> Void
+
 class MediaItemVM {
     
     private var mediaItems:[MediaItem]
@@ -17,16 +19,17 @@ class MediaItemVM {
         mediaItems = [MediaItem]()
     }
     
-    public func getMediaItems() {
+    public func getMediaItems(progressClosure:@escaping ProgressClosure) {
+       let q = DispatchQueue.global(qos: .background)
         firstly {
              APIService.sharedInstance.getAllMedia()
-        }.then { (items) -> Promise<[MediaItem]> in
+            }.then(on:q) { (items) -> Promise<[MediaItem]> in
             guard let mediaIds = items.media_items else {
                 return Promise { seal in
                     seal.fulfill([MediaItem]())
                 }
             }
-            return APIService.sharedInstance.downloadMediaItems(mediaIds, resultArray: [MediaItem]())
+            return APIService.sharedInstance.downloadMediaItems(mediaIds, resultArray: [MediaItem](), progressClosure: progressClosure)
             }.then { (result) in
                 self.sanitizeResults(result)
             }.done { (result) in

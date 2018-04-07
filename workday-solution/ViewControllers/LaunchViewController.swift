@@ -7,10 +7,13 @@
 //
 
 import UIKit
+import GradientProgressBar
 
 class LaunchViewController: UIViewController {
 
     @IBOutlet weak var launchLogo: UIImageView!
+    @IBOutlet weak var progressBar: GradientProgressBar!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -22,7 +25,7 @@ class LaunchViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        self.animateLaunchLogo()
+        self.showLaunchLogo()
     }
 
     override func didReceiveMemoryWarning() {
@@ -30,24 +33,34 @@ class LaunchViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    private func animateLaunchLogo() {
+    private func showLaunchLogo() {
         self.launchLogo.alpha = 0.0
         self.launchLogo.isHidden = false
         
         UIView.animate(withDuration: 1.5, delay: 0.0, options: UIViewAnimationOptions.curveEaseIn, animations: {
             self.launchLogo.alpha = 1.0
         }) { _ in
-            UIView.animate(withDuration: 1.5, delay: 2.0, options: UIViewAnimationOptions.curveEaseOut, animations: {
-                self.launchLogo.alpha = 0.0
-            }, completion: { (_) in
-                self.testAPI()
-            })
+            self.loadMedia()
         }
     }
     
-    private func testAPI() {
+    private func hideLaunchLogo() {
+        UIView.animate(withDuration: 1.5, delay: 2.0, options: UIViewAnimationOptions.curveEaseOut, animations: {
+            self.launchLogo.alpha = 0.0
+        }, completion: { (_) in
+            // Show CollectionView Controller
+        })
+    }
+    
+    private func loadMedia() {
         let viewModel = MediaItemVM()
-        viewModel.getMediaItems()
+        viewModel.getMediaItems { progress in
+            print(progress)
+            self.progressBar.setProgress(progress, animated: true)
+            if progress == 1.0 {
+                self.hideLaunchLogo()
+            }
+        }
     }
 }
 

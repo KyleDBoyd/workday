@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -24,21 +24,29 @@
                                     <constraint firstAttribute="width" secondItem="6sS-hO-xGG" secondAttribute="height" multiplier="2.5:1" id="sSb-fn-IpD"/>
                                 </constraints>
                             </imageView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="wPa-B3-Ugr" customClass="GradientProgressBar" customModule="GradientProgressBar">
+                                <rect key="frame" x="0.0" y="426" width="375" height="2"/>
+                            </progressView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="wPa-B3-Ugr" firstAttribute="top" secondItem="6sS-hO-xGG" secondAttribute="bottom" constant="7.5" id="2qq-ix-PJM"/>
                             <constraint firstItem="6sS-hO-xGG" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="4Ym-74-77r"/>
                             <constraint firstItem="6sS-hO-xGG" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="nt8-Tk-DBp"/>
                             <constraint firstItem="6sS-hO-xGG" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="pB4-d8-11Z"/>
+                            <constraint firstItem="wPa-B3-Ugr" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="ymW-3c-eIu"/>
+                            <constraint firstItem="wPa-B3-Ugr" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ymj-G1-QRX"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="launchLogo" destination="6sS-hO-xGG" id="vGS-VO-0Kv"/>
+                        <outlet property="progressBar" destination="wPa-B3-Ugr" id="op0-kj-z33"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="669.60000000000002" y="115.59220389805098"/>
         </scene>
         <!--Media Collection View Controller-->
         <scene sceneID="OS8-ty-M8w">
