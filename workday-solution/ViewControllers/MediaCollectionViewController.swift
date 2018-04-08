@@ -8,7 +8,6 @@
 
 import UIKit
 import Player
-import PopupDialog
 
 private let reuseIdentifier = "Cell"
 
@@ -80,11 +79,7 @@ class MediaCollectionViewController: UICollectionViewController {
         let vc = MediaPlayerViewController.controller(url)
         self.present(vc, animated: true, completion: nil)
     }
-    
-    private func getPopup() -> PopupDialog {
-        let popup = PopupDialog(viewController: self, buttonAlignment: UILayoutConstraintAxis.horizontal, transitionStyle: PopupDialogTransitionStyle.fadeIn, preferredWidth: self.view.frame.width, gestureDismissal: true, hideStatusBar: true, completion: nil)
-        return popup
-    }
+
 }
 
 

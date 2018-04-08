@@ -8,7 +8,6 @@
 
 import UIKit
 import Player
-import PopupDialog
 
 class MediaPlayerViewController: UIViewController {
     
