@@ -5,11 +5,10 @@ use_frameworks!
 def shared_pods
     pod 'PromiseKit', '~> 6.2'
     pod 'Alamofire', '~> 4.7'
-    pod 'OHHTTPStubs', '~> 6.1'
+    pod 'Hippolyte', '~> 0.4'
     pod 'PromiseKit/Alamofire', '~> 6.2'
     pod 'ReachabilitySwift', '~> 4.1'
     pod 'Player', '~> 0.8.4'
-    pod 'PopupDialog', '~> 0.7'
     pod 'NotificationBannerSwift', '~> 1.6'
     pod 'HTTPStatusCodes', '~> 3.2'
     pod 'Cache', '~> 4.2'

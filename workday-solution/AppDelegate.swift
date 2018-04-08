@@ -8,17 +8,33 @@
 
 import UIKit
 import PromiseKit
+import Reachability
+import NotificationBannerSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var reachability:Reachability = Reachability()!
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        
+        //declare this property where it won't go out of scope relative to your listener
+        self.setupReachability()
         return true
+    }
+    
+    private func setupReachability() {
+        //declare this inside of viewWillAppear
+        
+        NotificationCenter.default.addObserver(self, selector: #selector(reachabilityChanged(note:)), name: .reachabilityChanged, object: reachability)
+        do {
+            try reachability.startNotifier()
+        } catch {
+            let banner = StatusBarNotificationBanner(title: error.localizedDescription, style: .warning)
+            banner.show()
+            print("could not start reachability notifier")
+        }
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
@@ -54,6 +70,27 @@ extension AppDelegate {
     func setRootViewController(_ controller:UIViewController) {
         self.window?.rootViewController = controller
         self.window?.makeKeyAndVisible()
+    }
+    
+    @objc func reachabilityChanged(note: Notification) {
+        
+        DispatchQueue.main.async {
+            let reachability = note.object as! Reachability
+            switch reachability.connection {
+            case .wifi:
+                print("Reachable via WiFi")
+                let banner = StatusBarNotificationBanner(title: "Wifi Connected", style: .success)
+                banner.show()
+            case .cellular:
+                print("Reachable via Cellular")
+                let banner = StatusBarNotificationBanner(title: "Cell only Connection", style: .info)
+                banner.show()
+            case .none:
+                print("Network not reachable")
+                let banner = StatusBarNotificationBanner(title: "No Internet Connection", style: .danger)
+                banner.show()
+            }
+        }
     }
 }
 
