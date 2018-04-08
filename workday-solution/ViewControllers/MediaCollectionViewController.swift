@@ -79,7 +79,6 @@ class MediaCollectionViewController: UICollectionViewController {
         let vc = MediaPlayerViewController.controller(url)
         self.present(vc, animated: true, completion: nil)
     }
-
 }
 
 

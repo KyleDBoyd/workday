@@ -11,6 +11,8 @@ import Cache
 
 class Cache {
     
+    private(set) var diskConfig:DiskConfig = DiskConfig(name: "Storage")
+    private(set) var memoryConfig:MemoryConfig = MemoryConfig(expiry: .never, countLimit: 50, totalCostLimit: 50)
     static let sharedInstance = Cache()
     
     public func checkCache(_ mediaItems:MediaItems) throws -> Bool {
@@ -34,8 +36,6 @@ class Cache {
     }
     
     public func getCache() throws -> Storage {
-        let diskConfig = DiskConfig(name: "Storage")
-        let memoryConfig = MemoryConfig(expiry: .never, countLimit: 50, totalCostLimit: 50)
         let storage = try Storage(diskConfig: diskConfig, memoryConfig: memoryConfig)
         return storage
     }

@@ -66,7 +66,7 @@ class APITests: XCTestCase {
         let urlString = Strings.API.baseURL + "/" + Strings.API.Routes.media + "/" + "be96621d-7b27-404d-96eb-68cb29a82222"
         let url = URL(string: urlString)!
         var stub = StubRequest(method: .GET, url: url)
-        var stubResponse = StubResponse(statusCode: 200)
+        var stubResponse = StubResponse(statusCode: 204)
         
         let body = self.getStub("getMediaItem")
         stubResponse.body = body

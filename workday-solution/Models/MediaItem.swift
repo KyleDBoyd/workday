@@ -18,4 +18,12 @@ struct MediaItem : Codable {
     var url:String?
     var quality:String?
     var duration:Double?
+    
+    init() {
+        self.id = UUID.init().uuidString
+        self.name = "Empty Item"
+        self.url = Strings.API.baseURL
+        self.quality = Strings.emptyString
+        self.duration = 0
+    }
 }
