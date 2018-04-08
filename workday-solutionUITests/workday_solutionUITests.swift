@@ -32,22 +32,14 @@ class workday_solutionUITests: XCTestCase {
         
         let app = XCUIApplication()
         let collectionViewsQuery = app.collectionViews
-        let element = collectionViewsQuery.children(matching: .cell).element(boundBy: 1).children(matching: .other).element(boundBy: 1)
-        
         let exists = NSPredicate(format: "exists == 1")
-        
+        let element = app.collectionViews.children(matching: .cell).element(boundBy: 1).children(matching: .other).element(boundBy: 1)
         expectation(for: exists, evaluatedWith: element, handler: nil)
         waitForExpectations(timeout: 90, handler: nil)
+        
         element.swipeUp()
-        
-        let element3 = app.children(matching: .window).element(boundBy: 0).children(matching: .other).element.children(matching: .other).element.children(matching: .other).element
-        let element2 = element3.children(matching: .other).element
-        element2.tap()
-        
-        let playimageElement = collectionViewsQuery.children(matching: .cell).element(boundBy: 2).otherElements.containing(.image, identifier:"playImage").element
-        playimageElement.swipeUp()
-        element3.tap()
-        
+        app.children(matching: .window).element(boundBy: 0).children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.swipeDown()
+
     }
     
     func testSecondLoadUI() {
