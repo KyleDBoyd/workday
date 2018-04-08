@@ -27,6 +27,8 @@ class MediaCollectionViewCell: UICollectionViewCell {
                 return
         }
         self.player?.autoplay = true
+        self.player?.playbackLoops = true
+        self.player?.volume = 0.0 // We only want videos to play sound when clicked
         self.player?.view.frame = self.bounds
         
         self.addSubview(player.view)
@@ -35,9 +37,15 @@ class MediaCollectionViewCell: UICollectionViewCell {
         self.player?.playFromBeginning()
     }
     
-    override func prepareForReuse() {
-        super.prepareForReuse()
+    func clearCell() {
+        self.player?.stop()
+        self.player?.view.removeFromSuperview()
         self.item = nil
         self.player = nil
+    }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        self.clearCell()
     }
 }

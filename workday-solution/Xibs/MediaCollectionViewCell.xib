@@ -5,6 +5,8 @@
     </device>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -17,11 +19,27 @@
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                 <rect key="frame" x="0.0" y="0.0" width="275" height="382"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="playImage" translatesAutoresizingMaskIntoConstraints="NO" id="4rG-1Y-5wn">
+                        <rect key="frame" x="123.5" y="177.5" width="27.5" height="27.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="4rG-1Y-5wn" secondAttribute="height" multiplier="1:1" id="9lW-MS-DoM"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
             </view>
-            <color key="backgroundColor" red="1" green="0.082672104539999999" blue="0.1169745894" alpha="1" colorSpace="calibratedRGB"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="4rG-1Y-5wn" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="5Qb-V5-tiF"/>
+                <constraint firstItem="4rG-1Y-5wn" firstAttribute="centerY" secondItem="ZTg-uK-7eu" secondAttribute="centerY" id="EaW-Nd-nHY"/>
+                <constraint firstItem="4rG-1Y-5wn" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="0.1" id="JXZ-Sn-xYE"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="275" height="382"/>
             <point key="canvasLocation" x="23" y="52"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="playImage" width="225" height="225"/>
+    </resources>
 </document>
