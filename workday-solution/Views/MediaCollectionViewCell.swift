@@ -11,8 +11,13 @@ import Player
 
 class MediaCollectionViewCell: UICollectionViewCell {
     
+    @IBOutlet weak var playImage: UIImageView!
     var item:MediaItem?
     var player:Player?
+    
+    class func getNib() -> UINib {
+        return UINib(nibName: String(describing: MediaCollectionViewCell.self), bundle: Bundle.main)
+    }
 
     override func awakeFromNib() {
         super.awakeFromNib()

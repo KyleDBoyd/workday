@@ -36,6 +36,9 @@
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="275" height="382"/>
+            <connections>
+                <outlet property="playImage" destination="4rG-1Y-5wn" id="c1f-nN-si7"/>
+            </connections>
             <point key="canvasLocation" x="23" y="52"/>
         </collectionViewCell>
     </objects>

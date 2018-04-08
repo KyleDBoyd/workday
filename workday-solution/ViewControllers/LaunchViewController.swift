@@ -64,7 +64,6 @@ class LaunchViewController: UIViewController {
             self.progressBar.setProgress(progress, animated: true)
             if progress == 1.0 {
                 self.hideLaunchLogo(viewModel)
-                
             }
         }
     }

@@ -23,6 +23,7 @@
 		A64B9D212079982C0031B47F /* Pool.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64B9D202079982C0031B47F /* Pool.swift */; };
 		A64B9D222079982C0031B47F /* Pool.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64B9D202079982C0031B47F /* Pool.swift */; };
 		A64B9D232079982C0031B47F /* Pool.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64B9D202079982C0031B47F /* Pool.swift */; };
+		A64B9D26207A500E0031B47F /* APITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64B9D25207A500E0031B47F /* APITests.swift */; };
 		A6BBA60B2077DC9F001AEE47 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BBA60A2077DC9F001AEE47 /* Strings.swift */; };
 		A6BBA60C2077DC9F001AEE47 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BBA60A2077DC9F001AEE47 /* Strings.swift */; };
 		A6BBA60D2077DC9F001AEE47 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BBA60A2077DC9F001AEE47 /* Strings.swift */; };
@@ -81,6 +82,7 @@
 		A626AF8020787369007F531B /* MediaItemArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaItemArray.swift; sourceTree = "<group>"; };
 		A64B9D1A2078870F0031B47F /* MediaItemVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaItemVM.swift; sourceTree = "<group>"; };
 		A64B9D202079982C0031B47F /* Pool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pool.swift; sourceTree = "<group>"; };
+		A64B9D25207A500E0031B47F /* APITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APITests.swift; sourceTree = "<group>"; };
 		A6BBA60A2077DC9F001AEE47 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		A6FB54D02077C03500195029 /* workday-solution.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "workday-solution.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6FB54D32077C03500195029 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -207,6 +209,7 @@
 			isa = PBXGroup;
 			children = (
 				A6FB54E82077C03500195029 /* workday_solutionTests.swift */,
+				A64B9D25207A500E0031B47F /* APITests.swift */,
 				A6FB54EA2077C03500195029 /* Info.plist */,
 			);
 			path = "workday-solutionTests";
@@ -685,6 +688,7 @@
 			files = (
 				A6FB55172077C73A00195029 /* UIStoryboard+Extensions.swift in Sources */,
 				A626AF7E2078706C007F531B /* Alamofire+Extensions.swift in Sources */,
+				A64B9D26207A500E0031B47F /* APITests.swift in Sources */,
 				A6FB551F2077CE7C00195029 /* MediaCollectionViewController.swift in Sources */,
 				A6FB54E92077C03500195029 /* workday_solutionTests.swift in Sources */,
 				A6FB550C2077C6F900195029 /* MediaCollectionViewCell.swift in Sources */,

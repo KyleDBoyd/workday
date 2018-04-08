@@ -41,7 +41,7 @@ class MediaCollectionViewController: UICollectionViewController {
     
     private func registerClasses() {
         // Register cell classes
-        self.collectionView!.register(MediaCollectionViewCell.self, forCellWithReuseIdentifier: String(describing: MediaCollectionViewCell.self))
+        self.collectionView!.register(MediaCollectionViewCell.getNib(), forCellWithReuseIdentifier: String(describing: MediaCollectionViewCell.self))
     }
 
     // MARK: UICollectionViewDataSource

@@ -5,6 +5,7 @@ use_frameworks!
 def shared_pods
     pod 'PromiseKit', '~> 6.2'
     pod 'Alamofire', '~> 4.7'
+    pod 'OHHTTPStubs', '~> 6.1'
     pod 'PromiseKit/Alamofire', '~> 6.2'
     pod 'ReachabilitySwift', '~> 4.1'
     pod 'Player', '~> 0.8.4'
