@@ -9,7 +9,6 @@
 import UIKit
 import PromiseKit
 import Alamofire
-import RealmSwift
 
 class APIService {
     

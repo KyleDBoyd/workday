@@ -43,6 +43,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+}
 
+extension AppDelegate {
+    
+    class func getAppDelegate() -> AppDelegate {
+        return UIApplication.shared.delegate as! AppDelegate
+    }
+    
+    func setRootViewController(_ controller:UIViewController) {
+        self.window?.rootViewController = controller
+        self.window?.makeKeyAndVisible()
+    }
 }
 

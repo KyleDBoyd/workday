@@ -20,6 +20,9 @@
 		A64B9D1D2078870F0031B47F /* MediaItemVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64B9D1A2078870F0031B47F /* MediaItemVM.swift */; };
 		A64B9D1E207929BC0031B47F /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FB55012077C6B700195029 /* APIService.swift */; };
 		A64B9D1F207929BD0031B47F /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6FB55012077C6B700195029 /* APIService.swift */; };
+		A64B9D212079982C0031B47F /* Pool.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64B9D202079982C0031B47F /* Pool.swift */; };
+		A64B9D222079982C0031B47F /* Pool.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64B9D202079982C0031B47F /* Pool.swift */; };
+		A64B9D232079982C0031B47F /* Pool.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64B9D202079982C0031B47F /* Pool.swift */; };
 		A6BBA60B2077DC9F001AEE47 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BBA60A2077DC9F001AEE47 /* Strings.swift */; };
 		A6BBA60C2077DC9F001AEE47 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BBA60A2077DC9F001AEE47 /* Strings.swift */; };
 		A6BBA60D2077DC9F001AEE47 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6BBA60A2077DC9F001AEE47 /* Strings.swift */; };
@@ -77,6 +80,7 @@
 		A626AF7C2078706C007F531B /* Alamofire+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Alamofire+Extensions.swift"; sourceTree = "<group>"; };
 		A626AF8020787369007F531B /* MediaItemArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaItemArray.swift; sourceTree = "<group>"; };
 		A64B9D1A2078870F0031B47F /* MediaItemVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaItemVM.swift; sourceTree = "<group>"; };
+		A64B9D202079982C0031B47F /* Pool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pool.swift; sourceTree = "<group>"; };
 		A6BBA60A2077DC9F001AEE47 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		A6FB54D02077C03500195029 /* workday-solution.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "workday-solution.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6FB54D32077C03500195029 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -149,6 +153,15 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		A64B9D242079983A0031B47F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A6BBA60A2077DC9F001AEE47 /* Strings.swift */,
+				A64B9D202079982C0031B47F /* Pool.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		A6FB54C72077C03500195029 = {
 			isa = PBXGroup;
 			children = (
@@ -174,6 +187,7 @@
 		A6FB54D22077C03500195029 /* workday-solution */ = {
 			isa = PBXGroup;
 			children = (
+				A64B9D242079983A0031B47F /* Resources */,
 				A64B9D19207886F70031B47F /* ViewModels */,
 				A6FB55212077D69200195029 /* Models */,
 				A6FB551B2077CB6800195029 /* ViewControllers */,
@@ -185,7 +199,6 @@
 				A6FB54D32077C03500195029 /* AppDelegate.swift */,
 				A6FB54DA2077C03500195029 /* Assets.xcassets */,
 				A6FB54DF2077C03500195029 /* Info.plist */,
-				A6BBA60A2077DC9F001AEE47 /* Strings.swift */,
 			);
 			path = "workday-solution";
 			sourceTree = "<group>";
@@ -439,12 +452,9 @@
 				"${BUILT_PRODUCTS_DIR}/MarqueeLabel/MarqueeLabel.framework",
 				"${BUILT_PRODUCTS_DIR}/NotificationBannerSwift/NotificationBannerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Player/Player.framework",
-				"${BUILT_PRODUCTS_DIR}/Pooling/Pooling.framework",
 				"${BUILT_PRODUCTS_DIR}/PopupDialog/PopupDialog.framework",
 				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
 				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
-				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
-				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -457,12 +467,9 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MarqueeLabel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NotificationBannerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Player.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Pooling.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PopupDialog.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -539,12 +546,9 @@
 				"${BUILT_PRODUCTS_DIR}/MarqueeLabel/MarqueeLabel.framework",
 				"${BUILT_PRODUCTS_DIR}/NotificationBannerSwift/NotificationBannerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Player/Player.framework",
-				"${BUILT_PRODUCTS_DIR}/Pooling/Pooling.framework",
 				"${BUILT_PRODUCTS_DIR}/PopupDialog/PopupDialog.framework",
 				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
 				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
-				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
-				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -557,12 +561,9 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MarqueeLabel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NotificationBannerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Player.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Pooling.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PopupDialog.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -630,12 +631,9 @@
 				"${BUILT_PRODUCTS_DIR}/MarqueeLabel/MarqueeLabel.framework",
 				"${BUILT_PRODUCTS_DIR}/NotificationBannerSwift/NotificationBannerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Player/Player.framework",
-				"${BUILT_PRODUCTS_DIR}/Pooling/Pooling.framework",
 				"${BUILT_PRODUCTS_DIR}/PopupDialog/PopupDialog.framework",
 				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
 				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
-				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
-				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -648,12 +646,9 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MarqueeLabel.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NotificationBannerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Player.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Pooling.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PopupDialog.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -675,6 +670,7 @@
 				A626AF7D2078706C007F531B /* Alamofire+Extensions.swift in Sources */,
 				A6FB55232077D6C400195029 /* MediaItem.swift in Sources */,
 				A6FB54D62077C03500195029 /* LaunchViewController.swift in Sources */,
+				A64B9D212079982C0031B47F /* Pool.swift in Sources */,
 				A6FB55062077C6E100195029 /* MediaCollectionViewController.swift in Sources */,
 				A6FB55022077C6B700195029 /* APIService.swift in Sources */,
 				A6FB55122077C72700195029 /* MediaPlayerViewController.swift in Sources */,
@@ -697,6 +693,7 @@
 				A6FB55242077D6C400195029 /* MediaItem.swift in Sources */,
 				A6BBA60C2077DC9F001AEE47 /* Strings.swift in Sources */,
 				A64B9D1C2078870F0031B47F /* MediaItemVM.swift in Sources */,
+				A64B9D222079982C0031B47F /* Pool.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -714,6 +711,7 @@
 				A6FB55252077D6C400195029 /* MediaItem.swift in Sources */,
 				A6BBA60D2077DC9F001AEE47 /* Strings.swift in Sources */,
 				A64B9D1D2078870F0031B47F /* MediaItemVM.swift in Sources */,
+				A64B9D232079982C0031B47F /* Pool.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

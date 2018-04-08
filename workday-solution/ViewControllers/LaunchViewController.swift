@@ -52,7 +52,8 @@ class LaunchViewController: UIViewController {
             self.launchLogo.alpha = 0.0
             self.progressBar.alpha = 0.0
         }, completion: { (_) in
-            let controller = MediaCollectionViewController.controller()
+            let controller = MediaCollectionViewController.controller(viewModel)
+            let appDelegate = AppDelegate.getAppDelegate().setRootViewController(controller)
         })
     }
     
@@ -62,7 +63,8 @@ class LaunchViewController: UIViewController {
             print(progress)
             self.progressBar.setProgress(progress, animated: true)
             if progress == 1.0 {
-                self.hideLaunchLogo()
+                self.hideLaunchLogo(viewModel)
+                
             }
         }
     }
