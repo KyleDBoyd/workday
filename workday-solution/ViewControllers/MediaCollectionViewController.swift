@@ -73,50 +73,16 @@ class MediaCollectionViewController: UICollectionViewController {
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let item = self.viewModel.mediaItems[indexPath.item]
-        let player = self.setupPlayer(item: item)
-        let videoViewController = self.setupVideoViewController(player)
-        self.present(videoViewController, animated: true, completion: {
-            player.playFromBeginning()
-        })
-    }
-    
-    private func setupPlayer( item:MediaItem) -> Player {
-        let player = Player()
-        guard let url = item.url,
-            let videoUrl = URL(string: url) else {
-                return player
+        guard let urlString = item.url,
+            let url = URL(string:urlString) else {
+                return
         }
-        player.autoplay = true
-        player.playbackLoops = true
-        player.view.frame = self.view.bounds
-        player.url = videoUrl
-        return player
+        let vc = MediaPlayerViewController.controller(url)
+        self.present(vc, animated: true, completion: nil)
     }
     
-    private func setupVideoViewController(_ player:Player) -> PopupDialog {
-        // Customize dialog appearance
-        let pv = PopupDialogDefaultView.appearance()
-        pv.titleFont    = UIFont(name: "HelveticaNeue-Light", size: 16)!
-        pv.titleColor   = UIColor.white
-        pv.messageFont  = UIFont(name: "HelveticaNeue", size: 14)!
-        pv.messageColor = UIColor(white: 0.8, alpha: 1)
-        
-        // Customize the container view appearance
-        let pcv = PopupDialogContainerView.appearance()
-        pcv.backgroundColor = UIColor(red:0.23, green:0.23, blue:0.27, alpha:1.00)
-        pcv.cornerRadius    = 2
-        pcv.shadowEnabled   = true
-        pcv.shadowColor     = UIColor.black
-        
-        // Customize overlay appearance
-        let ov = PopupDialogOverlayView.appearance()
-        ov.blurEnabled = true
-        ov.blurRadius  = 30
-        ov.liveBlurEnabled = true
-        ov.opacity     = 0.7
-        ov.color       = UIColor.black
-        
-        let popup = PopupDialog(viewController: player, buttonAlignment: UILayoutConstraintAxis.horizontal, transitionStyle: PopupDialogTransitionStyle.fadeIn, preferredWidth: self.view.frame.width, gestureDismissal: true, hideStatusBar: true, completion: nil)
+    private func getPopup() -> PopupDialog {
+        let popup = PopupDialog(viewController: self, buttonAlignment: UILayoutConstraintAxis.horizontal, transitionStyle: PopupDialogTransitionStyle.fadeIn, preferredWidth: self.view.frame.width, gestureDismissal: true, hideStatusBar: true, completion: nil)
         return popup
     }
 }

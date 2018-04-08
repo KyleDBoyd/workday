@@ -7,17 +7,59 @@
 //
 
 import UIKit
+import Player
+import PopupDialog
 
 class MediaPlayerViewController: UIViewController {
-
+    
+    @IBOutlet weak var containerView: UIView!
+    var url:URL!
+    var player:Player!
+    
+    private class func controller() -> MediaPlayerViewController {
+        let controller = UIStoryboard.mediaPlayerViewController()
+        return controller
+    }
+    
+    class func controller(_ url:URL) -> MediaPlayerViewController  {
+        let controller = MediaPlayerViewController.controller()
+        controller.url = url
+        return controller
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.setupGestureRecognizers()
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.setupPlayer()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+    }
+    
+    private func setupGestureRecognizers() {
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(MediaPlayerViewController.handleTap))
+        tapGesture.numberOfTapsRequired = 1
+        self.view.addGestureRecognizer(tapGesture)
+    }
+    
+    private func setupPlayer() {
+        let player = Player()
+        self.player = player
+        player.autoplay = true
+        player.playbackLoops = true
+        player.view.frame = self.containerView.bounds
+        player.url = self.url
+        self.containerView.addSubview(player.view)
+        self.player.playFromBeginning()
+        self.view.backgroundColor = UIColor.white
+    }
+    
+    @objc func handleTap(recognizer: UITapGestureRecognizer) {
+        self.dismiss(animated: true, completion: nil)
     }
 }

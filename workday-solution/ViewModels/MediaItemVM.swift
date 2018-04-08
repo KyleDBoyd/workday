@@ -8,6 +8,7 @@
 
 import Foundation
 import PromiseKit
+import Cache
 
 public typealias ProgressClosure = (Float) -> Void
 
@@ -20,21 +21,64 @@ class MediaItemVM {
     }
     
     public func getMediaItems(progressClosure:@escaping ProgressClosure) {
-       let q = DispatchQueue.global(qos: .background)
+        let q = DispatchQueue.global(qos: .background)
+        let mainQ = DispatchQueue.main
         firstly {
-             APIService.sharedInstance.getAllMedia()
+            APIService.sharedInstance.getAllMedia()
             }.then(on:q) { (items) -> Promise<[MediaItem]> in
-            guard let mediaIds = items.media_items else {
-                return Promise { seal in
-                    seal.fulfill([MediaItem]())
+                guard let mediaIds = items.media_items else {
+                    return Promise { seal in
+                        seal.fulfill([MediaItem]())
+                    }
                 }
-            }
-            return APIService.sharedInstance.downloadMediaItems(mediaIds, resultArray: [MediaItem](), progressClosure: progressClosure)
-            }.then { (result) in
-                self.sanitizeResults(result)
+                
+                if try self.checkCache(items) {
+                    return Promise { seal in
+                        let result = try self.retrieveFromCache(items)
+                        mainQ.async {
+                            progressClosure(1.0)
+                        }
+                        seal.fulfill(result)
+                    }
+                } else {
+                    return APIService.sharedInstance.downloadMediaItems(mediaIds, resultArray: [MediaItem](), progressClosure: progressClosure)
+                }
+            }.then { (result) -> Promise<[MediaItem]> in
+                let items = MediaItems()
+                try self.saveToCache(items, mediaItemArray: result)
+                return self.sanitizeResults(result)
             }.done { (result) in
                 self.mediaItems = result
+            }.catch { (error) in
+                // Handle All Errors that are thrown
         }
+    }
+    
+    private func checkCache(_ mediaItems:MediaItems) throws -> Bool {
+        let cache = try self.getCache()
+        // Check if Exists
+        let hasMediaItems = try cache.existsObject(ofType: [MediaItem].self, forKey: String(describing: MediaItems.self))
+        
+        return hasMediaItems
+    }
+    
+    private func retrieveFromCache(_ mediaItems:MediaItems) throws -> [MediaItem] {
+        let cache = try self.getCache()
+        let result = try cache.object(ofType: [MediaItem].self, forKey: String(describing: MediaItems.self))
+        return result
+    }
+    
+    private func saveToCache(_ mediaItems:MediaItems, mediaItemArray:[MediaItem]) throws {
+        let mediaItemsMirror = Mirror(reflecting: mediaItems)
+        let cache = try self.getCache()
+        try cache.setObject(mediaItemArray, forKey: String(describing: mediaItemsMirror.subjectType))
+    }
+    
+    private func getCache() throws -> Storage {
+        let diskConfig = DiskConfig(name: "Storage")
+        let memoryConfig = MemoryConfig(expiry: .never, countLimit: 50, totalCostLimit: 50)
+        let storage = try Storage(diskConfig: diskConfig, memoryConfig: memoryConfig)
+        return storage
     }
     
     private func sanitizeResults(_ items:[MediaItem]) -> Promise<[MediaItem]> {

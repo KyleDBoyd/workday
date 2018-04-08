@@ -10,4 +10,7 @@ import Foundation
 
 struct MediaItems: Codable {
     var media_items:[String]?
+    
+    init() {
+    }
 }
