@@ -31,15 +31,11 @@ class workday_solutionUITests: XCTestCase {
     func testFirstLoadUI() {
         
         let app = XCUIApplication()
-        let collectionViewsQuery = app.collectionViews
         let exists = NSPredicate(format: "exists == 1")
         let element = app.collectionViews.children(matching: .cell).element(boundBy: 1).children(matching: .other).element(boundBy: 1)
         expectation(for: exists, evaluatedWith: element, handler: nil)
         waitForExpectations(timeout: 90, handler: nil)
-        
         element.swipeUp()
-        app.children(matching: .window).element(boundBy: 0).children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.children(matching: .other).element.swipeDown()
-
     }
     
     func testSecondLoadUI() {
@@ -55,5 +51,4 @@ class workday_solutionUITests: XCTestCase {
         element2.tap()
         element.swipeUp()
     }
-    
 }
