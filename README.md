@@ -49,13 +49,13 @@ $ pod install
 
 Below is a short justification for some of the libraries used within the project:
 
-[NotificationBannerSwift](https://github.com/Daltron/NotificationBanner) was used for displaying status updates (success, errors etc.)
-[Cache](https://github.com/hyperoslo/Cache) - Caching responses to HTTP requests.  Speeds up access to the app on restart
-[PromiseKit](https://github.com/mxcl/PromiseKit) - Necessary for method chaining, error encapsulation, and cleaner access to the backend API
-[Alamofire](https://github.com/Alamofire/Alamofire) - A networking library that has become a standard in the iOS community.  Has plugins for PromiseKit to make responses chainable
-[Player](https://github.com/piemonte/Player) was used to provide a quick and easy wrapper for displaying streaming videos
-[Reachability](https://github.com/ashleymills/Reachability.swift) for showing network status 
-[Hippolyte](https://github.com/JanGorman/Hippolyte) for fast stub mocking - test case write up
+- [NotificationBannerSwift](https://github.com/Daltron/NotificationBanner) was used for displaying status updates (success, errors etc.)
+- [Cache](https://github.com/hyperoslo/Cache) - Caching responses to HTTP requests.  Speeds up access to the app on restart
+- [PromiseKit](https://github.com/mxcl/PromiseKit) - Necessary for method chaining, error encapsulation, and cleaner access to the backend API
+- [Alamofire](https://github.com/Alamofire/Alamofire) - A networking library that has become a standard in the iOS community.  Has plugins for PromiseKit to make responses chainable
+- [Player](https://github.com/piemonte/Player) was used to provide a quick and easy wrapper for displaying streaming videos
+- [Reachability](https://github.com/ashleymills/Reachability.swift) for showing network status 
+- [Hippolyte](https://github.com/JanGorman/Hippolyte) for fast stub mocking - test case write up
 
 In addition to the libraries, I created an extension for parsing Alamofire objects using the Codable protocol into objects.  This was useful to facilitate immediately using objects from Alamofire request calls. 
 
