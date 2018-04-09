@@ -4,8 +4,8 @@
 
 This repository contains:
 
-1. [The specification](README.md) for the project.
-2. [Install](#badge) instructions for using the 
+1. [The specification](#requirements) for the project.
+2. [Install](#install) instructions for installing and using the project.
 
 
 ## Table of Contents
